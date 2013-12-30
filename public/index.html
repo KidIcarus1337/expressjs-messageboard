@@ -3,6 +3,10 @@
     <head>
         <title>ExpressJS Message Board</title>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+        <link type="text/css" rel="stylesheet" href="styling.css" />
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
         <script>
             $(function() {
                 $("#post_button").click(function() {
@@ -46,13 +50,27 @@
     </head>
     
     <body>
-    
-    <h3>Messages</h3>
-    <ul id="message_list"></ul>
-    
-    New Message:
-    <input type="text" name="post_message" id="post_message" />
-    <input type="button" name="post_button" id="post_button" value="Post" />
-        
+        <div class="container">
+            <div class="row">
+                <div id="header" class="jumbotron">
+                    <h2>Welcome to my message board test!</h2>
+                    <p>Check out all of these cool messages! Enter some of your own why don't you?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="messages_list" class="col-sm-7">
+                    <div class="page-header"><h3>Messages</h3></div>
+                </div>
+                <div id="input_area" class="col-sm-5">
+                    <div><h4>Submit a message!</h4></div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="post_message" id="post_message">
+                        <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" name="post_button" id="post_button">Submit</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

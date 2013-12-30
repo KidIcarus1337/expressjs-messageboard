@@ -1,0 +1,20 @@
+#header {
+    text-align: center;
+}
+
+.page-header {
+    margin-top: 0;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+#messages {
+    background-image: url("http://rateeveryanimal.com/wp-content/uploads/2011/11/hi-red-panda.jpg");
+    background-size: contain;
+}
+
+.message {
+    border-bottom: solid 1px #666666;
+}
